@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:ital,wght@0,400;1,200&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+*::-webkit-scrollbar{
+display: none;
+}
+
+.App {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+@media screen and (max-width: 1050px) {
+    .App {
+        flex-direction: column-reverse;
+    }
+
+    #sidebar {
+        height: auto;
+        overflow:hidden;
+    }
+
+    #contentContainer {
+        flex-direction: column;
+        padding-bottom: 50px;
+        padding-top: 10px;
+    }
+
+    .details,
+    .image {
+        width: 90vw !important;
+    }
+}

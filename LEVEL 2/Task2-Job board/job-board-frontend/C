@@ -1,0 +1,4 @@
+[submodule "CODSOFT"]
+    path = path/to/submodule  # Set the path where you want to place the submodule
+    url = https://github.com/SK-ALIJAN/CODSOFT.git
+
