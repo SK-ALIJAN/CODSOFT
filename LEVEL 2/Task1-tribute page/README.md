@@ -1,8 +1,7 @@
 ## Tribiute page for Elon Musk
 <br>
 I've crafted a React-based tribute page honoring Elon Musk, highlighting his groundbreaking work in technology, space, and innovation. Explore his remarkable journey and lasting impact.  <br><br>
-<p align="center"><img src="https://github.com/SK-ALIJAN/CODSOFT/assets/106768235/483a9893-fa0a-47c9-a813-4c4c60c4ea4a"></p> 
-
+<p align="center"><img src="https://github.com/SK-ALIJAN/CODSOFT/assets/106768235/52ae0899-1a29-469d-a72d-7c9ed1956fa4"></p> 
 
 
 ****************************************************************************************
