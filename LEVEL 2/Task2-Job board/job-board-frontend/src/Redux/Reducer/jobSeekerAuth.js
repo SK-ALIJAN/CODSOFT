@@ -46,6 +46,7 @@ let jobSeekerSignupReducer = (
 
 let InitialSignINValue = {
   isLoading: false,
+  isAuth: false,
   data: {},
   isError: false,
   ErrorMessage: "",
@@ -63,6 +64,7 @@ let jobSeekerSignINReducer = (
       return {
         ...state,
         isLoading: false,
+        isAuth: true,
         data: payload,
         isError: false,
         ErrorMessage: "",

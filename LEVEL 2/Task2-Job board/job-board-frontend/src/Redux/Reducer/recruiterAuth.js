@@ -48,6 +48,7 @@ let InitialSignINValue = {
   isLoading: false,
   data: {},
   isError: false,
+  isAuth: false,
   ErrorMessage: "",
 };
 
@@ -63,6 +64,7 @@ let recruiterSignINReducer = (
       return {
         ...state,
         isLoading: false,
+        isAuth: true,
         data: payload,
         isError: false,
         ErrorMessage: "",

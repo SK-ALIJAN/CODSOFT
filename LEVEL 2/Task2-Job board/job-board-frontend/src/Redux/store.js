@@ -21,8 +21,6 @@ import {
 
 import { jobSeekerAllJobReducer } from "./Reducer/jobSeekerJobs";
 
-
-// all the reducer
 const rootReducer = combineReducers({
   jobSeekerSignupReducer,
   jobSeekerSignINReducer,

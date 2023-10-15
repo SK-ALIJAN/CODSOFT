@@ -41,7 +41,7 @@ let recruiterAllJobsReducer = (state = initialValue, { type, payload }) => {
 
 let initialValueJobPost = {
   isloading: false,
-  data: {},
+  data: [],
   isError: false,
   Errormessage: "",
 };
