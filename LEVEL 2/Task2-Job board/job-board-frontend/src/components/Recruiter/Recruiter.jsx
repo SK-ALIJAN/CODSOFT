@@ -1,19 +1,14 @@
 import React from "react";
 import RecruiterAuth from "./RecruiterAuth";
 import { useSelector } from "react-redux";
-import RecruiterDashboard from "./RecruiterDashboard"
+import RecruiterDashboard from "./RecruiterDashboard";
 
 const Recruiter = () => {
-  // let isAuth = useSelector((store) => {
-  //   return store.SignINReducer.isAuth;
-  // });
+  let { isAuth } = useSelector((store) => {
+    return store.recruiterSignINReducer;
+  });
 
-  return (
-    <>
-      {/* <RecruiterAuth /> */}
-      <RecruiterDashboard />
-    </>
-  );
+  return <>{isAuth ? <RecruiterDashboard /> : <RecruiterAuth />}</>;
 };
 
 export default Recruiter;

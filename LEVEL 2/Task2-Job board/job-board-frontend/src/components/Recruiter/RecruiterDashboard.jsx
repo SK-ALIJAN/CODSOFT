@@ -6,7 +6,6 @@ const DashboardContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(135deg, #ffac81, #ff928b);
 `;
 
 const DashboardForm = styled.form`
@@ -18,7 +17,7 @@ const DashboardForm = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 `;
 

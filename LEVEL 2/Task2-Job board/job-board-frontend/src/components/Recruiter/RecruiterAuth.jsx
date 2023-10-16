@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
 import styled from "styled-components";
+import { recruiterlogin, recruitersignup } from "../../Redux/action";
 
 const AuthContainer = styled.div`
   display: flex;
@@ -51,16 +53,47 @@ const AuthLink = styled.span`
 `;
 
 const RecruiterAuth = () => {
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isSignUp, setIsSignUp] = useState(true);
+  const dispatch = useDispatch();
 
-  const handleAuth = () => {};
+  const handleAuth = () => {
+    if (isSignUp) {
+      let data = {
+        name,
+        email,
+        password,
+      };
+
+      if (data.name && data.email && data.password) {
+        dispatch(recruitersignup(data));
+        setIsSignUp(false);
+      } else alert("please fill all the input!");
+    } else {
+      let data = { email, password };
+
+      if (data.email && data.password) {
+        dispatch(recruiterlogin(data));
+      } else alert("please fill all the input!");
+    }
+  };
 
   return (
     <AuthContainer>
       <AuthForm>
         <AuthTitle>Recruiter {isSignUp ? "Sign Up" : "Sign In"}</AuthTitle>
+        {isSignUp ? (
+          <AuthInput
+            type="text"
+            placeholder="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+        ) : (
+          ""
+        )}
         <AuthInput
           type="text"
           placeholder="Email"
